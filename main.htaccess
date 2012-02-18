@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^songproducts.com [NC] 
+RewriteRule ^(.*)$ http://www.songproducts.com/$1 [R=301,L]
+RewriteCond %{the_request} ^[A-Z]{3,9}\ /.*index\.htm\ HTTP/
+RewriteRule ^(.*)index\.htm$ http://www.songproducts\.com/$1 [l,r=301]
+RewriteCond %{the_request} ^[A-Z]{3,9}\ /.*index\.php\ HTTP/
+RewriteRule ^(.*)index\.php$ http://www.songproducts\.com/$1 [l,r=301]

@@ -1,0 +1,22 @@
+@mixin nav_ul_interface() {
+	list-style:none;
+}
+@mixin nav_li_interface() {
+	float:left;
+	margin:.5em 1em;
+}
+
+@mixin nav_a_interface() {
+	
+}
+
+@mixin main_nav_ul_interface() {
+	
+}
+@mixin main_nav_li_interface() {
+	
+}
+
+@mixin main_nav_a_interface() {
+	
+}

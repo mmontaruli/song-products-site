@@ -1,0 +1,48 @@
+!!! 5
+%html
+	%head
+		%title= "#{@title} | SONG Products"
+		%link{ :href => "/assets/stylesheets/styles.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+	%body{:class => @body_class}
+		
+		#header_area{:class => "index"}
+			#header{:class => "row"}
+				%h1{:class => "logo three columns"}
+					%a(href="/") SONG Products
+				%ul.nav{:class => "three columns offset-by-six"}
+					%li
+						%a(href="/") Home
+					%li
+						%a(href="/about/") About
+					%li
+						%a(href="/contact/") Contact
+	
+		#content_area{:class => "index"}
+			#content{:class => "row"}
+
+				= yield
+	
+				#sidebar{:class => "three columns pull-eight"}
+					%h3 Recent News
+					%p Read below to find out what we've been up to.
+					%h4 May 3, 2010
+					%p 26Twelve Studio web design service grand opening.
+					%h4 February 25, 2010
+					%p SONG SVP of Sales and Marketing, Matt Montaruli discusses <a href="http://www.matthewmontaruli.com/investing/apple-great-company-bad-investment/">Apple as a long-term investment</a>.
+					%h4 November 21, 2009
+					%p Essentially Smooth announces sugar scrub samples available for order at <a href="http://www.essentiallysmooth.com/">essentiallysmooth.com</a>.
+					%h4 October 13, 2009
+					%p Essentially Smooth announces new sugar scrubs available for order at <a href="http://www.essentiallysmooth.com/">essentiallysmooth.com</a>.
+		
+		#footer_area{:class => "index"}
+			#footer{:class => "row"}
+				%p{:class => "copyright three columns"} &#169;2012 SONG Products, Inc.
+				%ul{:class => "footer nav three columns offset-by-six"}
+					%li
+						%a(href="/") Home
+					%li
+						%a(href="/about/") About
+					%li
+						%a(href="/contact/") Contact
+
+				%p{:class=>"attribution six columns offset-by-six"} Web Site Designed and Developed by <a href="http://www.26twelvestudio.com">26Twelve Studio Internet Marketing</a>.

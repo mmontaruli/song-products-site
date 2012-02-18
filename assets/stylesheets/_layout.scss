@@ -1,0 +1,18 @@
+@mixin paragraph_layout() {
+	margin:1em 0;
+}
+
+@mixin full_width() {
+	width:100%;
+}
+
+@mixin main_logo_layout($height, $logoimg) {
+	display:block;
+	height:$height;
+	background:url("../images/#{$logoimg}") no-repeat;
+	text-indent:-9999px;
+}
+
+@mixin subheading_layout($margin) {
+	margin-bottom:$margin;
+}

@@ -1,0 +1,17 @@
+@mixin main_font() {
+	font:14px/1.4 georgia, "Sans-Serif";
+}
+
+@mixin heading_font() {
+	font:55px/1.4 arial;
+}
+
+@mixin subheading_font($size) {
+	font:normal normal normal #{$size}/1.4 georgia, "Sans-Serif";
+}
+
+@mixin main_nav_font() {
+	font-family:"Arial";
+	font-size:15px;
+	text-decoration:none;
+}
